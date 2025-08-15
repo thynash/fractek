@@ -1,0 +1,5 @@
+# .gitignore
+
+# Ignore the 'venv' folder located inside the 'src' directory
+venv
+
