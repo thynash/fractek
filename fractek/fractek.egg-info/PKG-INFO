@@ -1,0 +1,136 @@
+Metadata-Version: 2.4
+Name: fractek
+Version: 0.1.0
+Summary: A world-class modular fractal mathematics, visualization, and analysis library
+Home-page: https://github.com/thynash/fractek
+Author: Nityansh Pant
+Author-email: pantnityansh@gmail.com
+License: MIT
+Keywords: fractal mathematics visualization analysis dimensional fractal-noise
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy>=1.19
+Requires-Dist: matplotlib>=3.4
+Requires-Dist: scipy>=1.7
+Requires-Dist: noise>=1.2.2
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: keywords
+Dynamic: license
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# FracTek: The Ultimate Fractal Library
+
+Welcome to **FracTek**, the crazy comprehensive fractal library designed for **beginners**, **researchers**, and **educators** alike.
+FracTek brings together:
+
+* Core mathematical fractal algorithms
+* Fractal dimension calculations
+* Advanced visualization tools
+* Fractal mixing and experimentation
+* Creative explorations in fractal-based art and science
+
+All under **one roof**.
+
+Whether you want to explore the Mandelbrot set for the first time, calculate the precise fractal dimension of a coastline, or generate surreal landscapes for your next art project — FracTek has you covered.
+
+---
+
+## ✨ Features
+
+* **Fractal Families:**
+    Generate classic and advanced fractals including **Mandelbrot**, **Julia**, **Koch Snowflake**, **Sierpinski Triangle**, **Barnsley Fern**, **Dragon Curve**, **IFS** patterns, and more.
+* **Fractal Dimension Calculation:**
+    Compute dimensions using **Hausdorff**, **box-counting**, and **correlation** methods.
+* **Fractal Mixing:**
+    Combine multiple fractals to analyze complex, hybrid dimensions.
+* **Visualization:**
+    High-quality **2D/3D renderings**, animations, and fully customizable color maps.
+* **Creative Experiments:**
+    Dive into **fractal noise**, **procedural landscapes**, **generative art**, and **machine learning** insights using fractal data.
+* **Extensible & Modular:**
+    Add your own fractal algorithms, dimension calculations, or visual styles easily.
+* **Documentation & Tutorials:**
+    Detailed examples and guides for all levels of users.
+
+---
+
+## 📦 Installation
+
+FracTek is currently in active development. To get started right away:
+
+```bash
+git clone [https://github.com/yourusername/fractek.git](https://github.com/yourusername/fractek.git)
+cd fractek
+# Install dependencies
+pip install -r requirements.txt
+```
+
+---
+
+## 🚀 Getting Started
+
+The Mandelbrot set is the first fractal available in FracTek.
+
+Located in `fractapy/fractal_families/mandelbrot.py`, it includes:
+
+* `mandelbrot`: Calculate escape iterations for a complex point.
+* `mandelbrot_set`: Generate the full Mandelbrot grid.
+* `plot_mandelbrot`: Visualize it with a heatmap color scheme.
+
+Example usage:
+
+```python
+from fractapy.fractal_families.mandelbrot import mandelbrot_set, plot_mandelbrot
+
+# Generate a Mandelbrot set
+data = mandelbrot_set(xmin=-2.0, xmax=1.0, ymin=-1.5, ymax=1.5, width=800, height=800, max_iter=200)
+
+# Plot the result
+plot_mandelbrot(data)
+```
+
+---
+
+## 🤝 Contributing
+
+We welcome contributions from the community!
+
+1.  Fork this repository
+2.  Create a new branch (`feature/amazing-fractal`)
+3.  Commit your changes
+4.  Push to the branch
+5.  Open a pull request
+
+See `CONTRIBUTING.md` for full guidelines.
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+---
+
+## 🌀 Why Fractals?
+
+Fractals are not just pretty patterns — they are mathematical blueprints found in nature, physics, computer graphics, and even stock market patterns.
+
+With FracTek, you can explore these intricate structures, learn their math, and create visuals that range from scientific models to pure digital art.
+
+> "Somewhere, something incredible is waiting to be known." — Carl Sagan

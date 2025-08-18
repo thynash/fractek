@@ -1,0 +1,5 @@
+dimension_calculations
+fractal_families
+fractal_mixing
+procedural
+visualization
