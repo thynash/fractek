@@ -4,17 +4,18 @@ setup(
     name='fractek',
     version='0.1.0',
     description='A world-class modular fractal mathematics, visualization, and analysis library',
-    author='Nityansh Pant ',
+    author='Nityansh Pant',
     author_email='pantnityansh@gmail.com',
     url='https://github.com/thynash/fractek',
-    packages=find_packages(exclude=['tests', 'venv']),
+    packages=find_packages(where="fractek"),  # <-- look in ./fractek for packages
+    package_dir={"": "fractek"},              # <-- root package source is in ./fractek
     install_requires=[
         'numpy>=1.19',
         'matplotlib>=3.4',
         'scipy>=1.7',
-        'noise>=1.2.2',           # if used for fractal_noise, Perlin/Simplex
-        'pytest>=6.2',            # for testing, users
-        # Add 'plotly', 'pywt', 'scikit-learn', 'torch', etc., if needed for visualization/ML
+        'noise>=1.2.2',
+        # 'pytest>=6.2',  # Only needed for development, not install_requires for end users
+        # Add 'plotly', 'pywt', 'scikit-learn', 'torch', etc. if needed
     ],
     python_requires='>=3.8',
     include_package_data=True,
