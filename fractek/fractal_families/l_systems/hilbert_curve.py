@@ -15,7 +15,7 @@ def _hilbert_curve(order, angle=90):
 
 def generate_hilbert_curve(order=3, step=10):
     seq = _hilbert_curve(order)
-    x, y, ang = [0], , 0
+    x, y, ang = [0],[0], 0
     for cmd in seq:
         if cmd == "F":
             x.append(x[-1] + step * np.cos(np.deg2rad(ang)))

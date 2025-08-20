@@ -7,7 +7,7 @@ def generate_peano_curve(order=2, step=10):
     for _ in range(order):
         seq = seq.replace('X', 'XFYFX+F+YFXFY-F-XFYFX')\
                  .replace('Y', 'YFXFY-F-XFYFX+F+YFXFY')
-    x, y, ang = [0], , 0
+    x, y, ang = [0],[0], 0
     for s in seq:
         if s == 'F':
             x.append(x[-1] + step*np.cos(np.deg2rad(ang)))

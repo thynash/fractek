@@ -6,7 +6,7 @@ def generate_sierpinski_arrowhead(order=6, step=10):
     seq, angle, state = 'A', 60, 0
     for _ in range(order):
         seq = ''.join([rules[c] if c in rules else c for c in seq])
-    x, y, a = [0], , 0
+    x, y, a = [0], [0], 0
     for c in seq:
         if c in 'AB':
             x.append(x[-1] + step*np.cos(np.deg2rad(a)))

@@ -6,7 +6,7 @@ def generate_dragon_curve(order=10, scale=10):
     seq = "FX"
     for _ in range(order):
         seq = seq.replace("X", "X+YF+").replace("Y", "-FX-Y")
-    x, y, angle = [0], , 0
+    x, y, angle = [0],[0], 0
     stack = []
     for cmd in seq:
         if cmd == "F":

@@ -17,7 +17,7 @@ def generate_binary_tree(order=6, length=50, angle=25):
 def plot_binary_tree(coords):
     plt.figure()
     for (p0, p1) in coords:
-        plt.plot([p0[0], p1], [p0[asset:1], p1[asset:1]], color='darkgreen')
+        plt.plot([p0, p1], [p0[1], p1[1]], color='darkgreen')
     plt.axis('equal')
     plt.axis('off')
     plt.title("Binary Tree (L-system style)")

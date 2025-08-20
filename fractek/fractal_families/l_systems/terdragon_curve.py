@@ -6,7 +6,7 @@ def generate_terdragon_curve(order=8, step=8):
     seq = 'F'
     for _ in range(order):
         seq = ''.join(rules.get(c, c) for c in seq)
-    x, y, angle = [0], , 0
+    x, y, angle = [0],[0], 0
     for move in seq:
         if move == 'F':
             x.append(x[-1] + step * np.cos(np.deg2rad(angle)))

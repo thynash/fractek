@@ -16,7 +16,7 @@ def generate_gosper_curve(order=2, step=10):
             else:
                 next_seq += c
         seq = next_seq
-    x, y, ang = [0], , 0
+    x, y, ang = [0],[0], 0
     for s in seq:
         if s in "AB":
             x.append(x[-1] + step*np.cos(np.deg2rad(ang)))
