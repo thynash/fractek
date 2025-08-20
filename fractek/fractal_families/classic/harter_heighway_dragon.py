@@ -5,7 +5,7 @@ def generate_harter_heighway_dragon(order=12, step=8):
     seq = 'FX'
     for _ in range(order):
         seq = seq.replace("X", "X+YF+").replace("Y", "-FX-Y")
-    x, y, a = [0], , 0
+    x, y, a = [0],[0], 0
     for c in seq:
         if c == 'F':
             x.append(x[-1] + step*np.cos(a))
