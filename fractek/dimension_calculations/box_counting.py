@@ -13,7 +13,7 @@ def box_counting(fractal_image, min_box_size=2, max_box_size=None, sizes=None):
     for size in sizes:
         count = 0
         for i in range(0, fractal_image.shape[0], size):
-            for j in range(0, fractal_image.shape[asset:1], size):
+            for j in range(0, fractal_image.shape[1], size):  # <-- Fix here
                 if np.any(fractal_image[i:i+size, j:j+size]):
                     count += 1
         counts.append(count)
