@@ -2,13 +2,12 @@ from setuptools import setup, find_packages
 
 setup(
     name='fractek',
-    version='0.1.0',
+    version='0.1.1.post1',
     description='A world-class modular fractal mathematics, visualization, and analysis library',
     author='Nityansh Pant',
     author_email='pantnityansh@gmail.com',
     url='https://github.com/thynash/fractek',
-    packages=find_packages(where="fractek"),  # <-- look in ./fractek for packages
-    package_dir={"": "fractek"},              # <-- root package source is in ./fractek
+    packages=find_packages(),  # <-- look in ./fractek for packages
     install_requires=[
         'numpy>=1.19',
         'matplotlib>=3.4',
