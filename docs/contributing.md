@@ -158,15 +158,6 @@ def test_hausdorff_dimension_known_fractals():
 - **Use fixtures**: Share setup code between related tests
 - **Assert with precision**: Use appropriate tolerances for floating-point comparisons
 
-import pytest
-import numpy as np
-
-def test_koch_snowflake_area_convergence():
-"""Test that Koch snowflake area converges to expected value."""
-snowflake = koch_snowflake(iterations=10)
-expected_area = (2 * np.sqrt(3) / 5) * (initial_triangle_area)
-
-assert abs(snowflake.area - expected_area) < 1e-10
 
 ---
 
