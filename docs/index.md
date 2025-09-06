@@ -67,16 +67,6 @@ Install Fractek from PyPI:
 
 pip install fractek
 
-
-
-Or for the latest development version:
-
-git clone https://github.com/thynash/fractek.git
-cd fractek
-pip install -e .
-
-
-
 ## Requirements
 
 - Python 3.8+
