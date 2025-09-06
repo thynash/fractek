@@ -44,21 +44,7 @@ mandel = mandelbrot.mandelbrot_set(
 )
 ```
 
-### 2. noise
-
-The `noise` module focuses on fractal noise generation—useful for textures, terrains, and procedural content.
-
-#### Key Functions
-- **`perlin_noise`**: Generates Perlin noise with customizable frequency and octaves.
-- **`simplex_noise`**: Produces simplex noise with natural patterns and lower computational cost.
-- **`fractal_noise`**: Combines multiple layers of noise across frequencies and amplitudes to create fractal noise patterns.
-
-#### Use Cases
-- Natural-looking procedural textures
-- Terrain generation in simulations
-- Adding complexity to visual artistic effects
-
-### 3. visualization
+### 2. visualization
 
 The `visualization` module provides tools and utilities for rendering fractals and fractal noise.
 
@@ -76,7 +62,7 @@ plot_fractal(mandel)
 plt.show()
 ```
 
-### 4. dimension
+### 3. dimension
 
 This module offers methods to analyze and compute fractal dimensions and multifractal spectra.
 
@@ -90,7 +76,7 @@ This module offers methods to analyze and compute fractal dimensions and multifr
 - Comparing fractal characteristics between datasets
 - Research in physics, biology, and finance
 
-### 5. utils
+### 4. utils
 
 Utility functions and classes supporting core fractek modules.
 
@@ -111,7 +97,6 @@ fractek is designed to be modular and extensible:
 | Module            | Purpose                                   | Key Features                          |
 |-------------------|-------------------------------------------|----------------------------------------|
 | fractal_families  | Generate classic and advanced fractals    | Mandelbrot, Julia, IFS fractals        |
-| noise             | Fractal noise generation                  | Perlin, Simplex, and fractal noise     |
 | visualization     | Plotting and rendering fractals           | Matplotlib integration, coloring       |
 | dimension         | Fractal dimension and multifractal analysis | Box-counting, Hausdorff, spectra     |
 | utils             | Helper functions & utilities              | Math helpers, color management         |
@@ -132,12 +117,4 @@ fractek is designed to be modular and extensible:
 4. **Consistency**
    - Standardized bullets, spacing, and code formatting; removed stray "text" placeholders.
 
-## How to Use
-
-- Save as `modules_overview.md`.
-- View in any Markdown renderer (e.g., GitHub, VS Code, MkDocs).
-- Ready for inclusion in the fractek documentation.
-```
-
-Just copy everything from the triple backticks and paste it into your Markdown file!
 
